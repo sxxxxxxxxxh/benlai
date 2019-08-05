@@ -27,27 +27,33 @@
 				str += `<li>${options.items[i].alt}</li>`
 			}
 			this.ul.html(str);
-			that.append(this.ul);
+			this.div = $("<div>");
+			that.append(this.div);
+			this.div.append(this.ul);
 			
-			this.ul.css({
+			this.div.css({
+				margin:"0 auto",
+				width: 1200,
+				})
 				
+			this.ul.css({
+				width: 990,
+				paddingLeft: 210,
 				height:30,
 				lineHeight:"30px",
-				display:"flex",
-				backgroundColor:"rgba(200,200,200,0.6)",
+				
 				position:"absolute",
-				right:0,
 				bottom:0,
-				margin:0,
-				padding:0,
+				
 				listStyle:"none",
 				textAlign:"center",
 				font:"400 14px/30px 'Microsoft YaHei'"
 			}).children("li").css({
 				cursor: "pointer",
-				flex:1,
-				borderLeft:"solid 1px #fff",
-				borderRight:"solid 1px #fff"
+				float:"left",
+				width: 163,
+				backgroundColor:"rgba(200,200,200,0.6)",
+				marginLeft: 2
 			}).eq(ban.index).css({
 			    backgroundColor:"#91be16",
 				color:"#fff"

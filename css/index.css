@@ -32,12 +32,33 @@ nav .shopcar s{background: url(../img/bg-1.png) 0 -158px no-repeat;width: 21px;h
 nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height: 23px;width: 37px;position: absolute;top: -16px;left: 21px;font: 400 14px/19px "微软雅黑";color: #fff;text-align: center;z-index: 68;}
 
 .nav{background: #8ab700;height: 44px;}
-.nav ul{clear: both;overflow: inherit;}
-.nav ul li{float: left;font: 400 18px/44px "Microsoft YaHei";padding: 0 25px;position: relative;}
-.nav ul li:hover{background: #78a000;}
-.nav ul li a{color: #fff;}
-.nav ul li:first-child{width: 175px;background: url(../img/bg-1.png) 158px -218px no-repeat #78a000;color: #fff;padding:0 0 0 35px;}
-.nav ul li img{position: absolute;top: -8px;right: 8px;}
+.nav .all{position: relative;z-index: 39;float: left;width: 210px;}
+.nav .all a.alll{float: left;width: 175px;background: url(../img/bg-1.png) 158px -218px no-repeat #78a000;font: 400 18px/44px "Microsoft YaHei";color: #fff;padding-left: 35px;text-decoration: none;}
+.nav .all .allll{height:44px;}
+
+.nav .alllist{border: 2px solid #91be16;position: relative;left: 0;height: 396px;width: 206px;background-color: #fff;display: block;z-index:39}
+.nav .alllist dl{height: 33px;width: 206px;float: left;}
+.nav .alllist dl dt{height: 31px;line-height: 31px;width: 156px;position: relative;z-index: 37;top: 0;left: 0;color: #4c4c4c;padding: 1px 0 1px 50px;text-overflow: clip;display: block;overflow: hidden;font-family: "Microsoft YaHei";background:url(../img/bg-5.png)  no-repeat #fff;}
+.nav .alllist dl dt:after{content: "";background: url(../img/youjian.png) 0 0 no-repeat;display: block;width: 6px;height: 12px;float: right;margin: 12px 12px 0 0;}
+.nav .alllist dl dt:nth-child(1){background-position:8px -33px}
+.nav .alllist dl dt a:hover{color: #8ab700;text-decoration: underline;}
+.nav .alllist dl dd{width:600px;border: 1px solid #8ab700;border-top:0; background: rgba(255,255,255,.97);position: absolute;top: -2px;left: 208px;z-index: 36;min-height: 384px;padding: 15px 15px 0 0;}
+.nav .alllist dl dd ul{width:590px;float:left;}
+.nav .alllist dl dd ul li{overflow:hidden;}
+.nav .alllist dl dd ul li .list-l{width: 90px;float: left;text-align: right;font-weight: 700;}
+.nav .alllist dl dd ul li .list-l a{color:#688529;}
+.nav .alllist dl dd ul li .list-l a:hover{color: #ff6900;text-decoration: underline;}
+.nav .alllist dl dd ul li .list-r{width: 495px;float: right;}
+.nav .alllist dl dd ul li .list-r em{padding: 0 15px;border-right: 1px solid #4c4c4c;float: left;max-width: 400px;margin: 0 0 17px;}
+.nav .alllist dl dd ul li .list-r em:last-child{border-right: 0;}
+.nav .alllist dl dd ul li .list-r em a{color: #4c4c4c;white-space: nowrap;width: auto;}
+.nav .alllist dl dd ul li .list-r em a:hover{color: #ff6900;text-decoration: underline;}
+
+.nav ul.meau{float: right;width: 988px;height: 40px;margin: 2px 0 0 2px;overflow:inherit;}
+.nav ul.meau li{float: left;font: 400 18px/44px "Microsoft YaHei";padding: 0 25px;position: relative;}
+.nav ul.meau li:hover{background: #78a000;}
+.nav ul.meau li a{color: #fff;}
+.nav ul.meau li img{position: absolute;top: -8px;right: 8px;}
 
 #banner .box{height: 400px;position: relative;overflow: hidden;margin: 0 auto;}
 /* #banner a.img{overflow: hidden;width: 100%;height: 100%;} */
