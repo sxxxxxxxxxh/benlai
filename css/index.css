@@ -31,18 +31,45 @@ nav .shopcar{background: url(../img/bg-1.png) 98px 17px no-repeat #f8f8f6;positi
 nav .shopcar s{background: url(../img/bg-1.png) 0 -158px no-repeat;width: 21px;height: 16px;display: inline-block;margin: 12px 13px 0 12px;float: left;}
 nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height: 23px;width: 37px;position: absolute;top: -16px;left: 21px;font: 400 14px/19px "微软雅黑";color: #fff;text-align: center;z-index: 68;}
 
-.nav{background: #8ab700;height: 44px;}
-.nav .all{position: relative;z-index: 39;float: left;width: 210px;}
+.nav{background: #8ab700;height: 44px;position: relative;}
+.nav .margin-1{width: 1200px;margin: 0 auto;} 
+.nav .all{position:absolute;z-index: 39;float: left;width: 210px;}
+.nav .all:hover .alllist{display: block;}
 .nav .all a.alll{float: left;width: 175px;background: url(../img/bg-1.png) 158px -218px no-repeat #78a000;font: 400 18px/44px "Microsoft YaHei";color: #fff;padding-left: 35px;text-decoration: none;}
 .nav .all .allll{height:44px;}
 
-.nav .alllist{border: 2px solid #91be16;position: relative;left: 0;height: 396px;width: 206px;background-color: #fff;display: block;z-index:39}
+.nav .alllist{border: 2px solid #91be16;position: absolute;left: 0;height: 396px;width: 206px;background-color: #fff;display:block;z-index:39}
 .nav .alllist dl{height: 33px;width: 206px;float: left;}
-.nav .alllist dl dt{height: 31px;line-height: 31px;width: 156px;position: relative;z-index: 37;top: 0;left: 0;color: #4c4c4c;padding: 1px 0 1px 50px;text-overflow: clip;display: block;overflow: hidden;font-family: "Microsoft YaHei";background:url(../img/bg-5.png)  no-repeat #fff;}
+.nav .alllist dl dt{height: 31px;line-height: 31px;width: 156px;position:relative;z-index: 37;top: 0;left: 0;color: #4c4c4c;padding: 1px 0 1px 50px;text-overflow: clip;display: block;overflow: hidden;font-family: "Microsoft YaHei";background:url(../img/bg-5.png)  no-repeat #fff;}
 .nav .alllist dl dt:after{content: "";background: url(../img/youjian.png) 0 0 no-repeat;display: block;width: 6px;height: 12px;float: right;margin: 12px 12px 0 0;}
-.nav .alllist dl dt:nth-child(1){background-position:8px -33px}
+.nav .alllist dl:nth-child(1) dt{background-position:8px -33px}
+.nav .alllist dl:nth-child(2) dt{background-position:8px 0}
+.nav .alllist dl:nth-child(3) dt{background-position:8px -66px}
+.nav .alllist dl:nth-child(4) dt{background-position:8px -99px}
+.nav .alllist dl:nth-child(5) dt{background-position:8px -132px}
+.nav .alllist dl:nth-child(6) dt{background-position:8px -165px}
+.nav .alllist dl:nth-child(7) dt{background-position:8px -198px}
+.nav .alllist dl:nth-child(8) dt{background-position:8px -231px}
+.nav .alllist dl:nth-child(9) dt{background-position:8px -264px}
+.nav .alllist dl:nth-child(10) dt{background-position:8px -297px}
+.nav .alllist dl:nth-child(11) dt{background-position:8px -330px}
+.nav .alllist dl:nth-child(12) dt{background-position:8px -363px}
+.nav .alllist dl dt:hover{background:url(../img/bg-6.png)  no-repeat #fff;border-top: 1px solid #91be16;border-bottom: 1px solid #91be16;border-left: 2px solid #91be16;padding: 0 3px 0 48px;color: #78a000;font-size: 14px;}
+.nav .alllist dl:hover dd{display: block;}
+.nav .alllist dl:nth-child(1) dt:hover{background-position:6px -33px}
+.nav .alllist dl:nth-child(2) dt:hover{background-position:6px 0}
+.nav .alllist dl:nth-child(3) dt:hover{background-position:6px -66px}
+.nav .alllist dl:nth-child(4) dt:hover{background-position:6px -99px}
+.nav .alllist dl:nth-child(5) dt:hover{background-position:6px -132px}
+.nav .alllist dl:nth-child(6) dt:hover{background-position:6px -165px}
+.nav .alllist dl:nth-child(7) dt:hover{background-position:6px -198px}
+.nav .alllist dl:nth-child(8) dt:hover{background-position:6px -231px}
+.nav .alllist dl:nth-child(9) dt:hover{background-position:6px -264px}
+.nav .alllist dl:nth-child(10) dt:hover{background-position:6px -297px}
+.nav .alllist dl:nth-child(11) dt:hover{background-position:6px -330px}
+.nav .alllist dl:nth-child(12) dt:hover{background-position:6px -363px}
 .nav .alllist dl dt a:hover{color: #8ab700;text-decoration: underline;}
-.nav .alllist dl dd{width:600px;border: 1px solid #8ab700;border-top:0; background: rgba(255,255,255,.97);position: absolute;top: -2px;left: 208px;z-index: 36;min-height: 384px;padding: 15px 15px 0 0;}
+.nav .alllist dl dd{display: none; width:600px;border: 1px solid #8ab700;border-top:0; background: rgba(255,255,255,.97);position: absolute;top: -2px;left: 208px;z-index: 36;min-height: 384px;padding: 15px 15px 0 0;}
 .nav .alllist dl dd ul{width:590px;float:left;}
 .nav .alllist dl dd ul li{overflow:hidden;}
 .nav .alllist dl dd ul li .list-l{width: 90px;float: left;text-align: right;font-weight: 700;}
@@ -55,14 +82,14 @@ nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height:
 .nav .alllist dl dd ul li .list-r em a:hover{color: #ff6900;text-decoration: underline;}
 
 .nav ul.meau{float: right;width: 988px;height: 40px;margin: 2px 0 0 2px;overflow:inherit;}
-.nav ul.meau li{float: left;font: 400 18px/44px "Microsoft YaHei";padding: 0 25px;position: relative;}
-.nav ul.meau li:hover{background: #78a000;}
-.nav ul.meau li a{color: #fff;}
+.nav ul.meau li{float: left;position: relative;}
+.nav ul.meau li a{color: #fff;font: 400 18px/40px "Microsoft YaHei";padding: 0 25px;display: block;}
+.nav ul.meau li a:hover{background: #78a000;}
 .nav ul.meau li img{position: absolute;top: -8px;right: 8px;}
 
-#banner .box{height: 400px;position: relative;overflow: hidden;margin: 0 auto;}
+#banner .box{height: 400px;position: relative;left: 0; overflow: hidden;margin: 0 auto;}
 /* #banner a.img{overflow: hidden;width: 100%;height: 100%;} */
-#banner .imgbox{height:400;}
+#banner .imgbox{height:400px;}
 #banner .imgbox img{height: 400px;position: absolute;left:1920px;top:0;}
 #banner .imgbox img:nth-child(1){left:0;}
 #banner .btns{position: relative;}
