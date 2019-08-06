@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+.margin{width: 1200px;margin: 0 auto;overflow: hidden;}
+
+header{background: #fcfcfc;height: 30px;border-bottom:1px solid #e5e5e5 ;}
+header .top{font: 12px/30px ""; height: 30px;}
+header .top .top-l{float: left;}
+header .top .top-l a{color:#ff6900;}
+header .top ul{float: right;}
+header .top ul{height: 30px;}
+header .top ul li,b{float: left;}
+header .top ul a.qian{margin: 0 15px;}
+header .top ul a.qian:hover{color: #ff6900;text-decoration: underline;}
+
+#tips{height:60px ;}
+#tips img{width:100% ;}
+
+nav{height: 102px;}
+nav .nav-t{display: flex;justify-content: space-between;}
+nav img{margin-top: 41px;}
+nav .search{overflow: hidden;}
+nav .search ul{display: flex;margin-top: 8px;}
+nav .search ul li{margin-right:26px ;font: 12px/32px "";}
+nav .search ul li a:hover{color: #ff6900;text-decoration: underline;}
+nav .search input[name = "txt"]{width: 387px;height: 35px;border: 3px solid #91be16;color: #3e4141;font: 12px/35px "";text-indent: 10px;float: left;}
+nav .search input[name = "btn"]{width: 77px;height: 41px;border: 0;background:url(../img/bg-1.png) no-repeat center;background-position: 0 -265px;border-top:3px solid #91be16 ;border-bottom:3px solid #91be16 ;}
+nav .mine,.shopcar{margin-top: 40px; width: 92px;height: 38px;background: #f8f8f6;border: 1px solid #e5e5e5;text-align: center;font: 400 14px/38px "微软雅黑";color: #3e4141;padding-right: 31px;}
+nav .mine{background: url(../img/bg-1.png) 103px 17px no-repeat #f8f8f6;}
+nav .mine s{background: url(../img/bg-1.png) 0 -121px no-repeat;width: 16px;height: 17px;display: inline-block;margin: 12px 9px 0 11px;float: left;}
+nav .shopcar{background: url(../img/bg-1.png) 98px 17px no-repeat #f8f8f6;position: relative;}
+nav .shopcar s{background: url(../img/bg-1.png) 0 -158px no-repeat;width: 21px;height: 16px;display: inline-block;margin: 12px 13px 0 12px;float: left;}
+nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height: 23px;width: 37px;position: absolute;top: -16px;left: 21px;font: 400 14px/19px "微软雅黑";color: #fff;text-align: center;z-index: 68;}
+
+.nav{background: #8ab700;height: 44px;position: relative;}
+.nav .margin-1{width: 1200px;margin: 0 auto;} 
+.nav .all{position:absolute;z-index: 39;float: left;width: 210px;}
+.nav .all:hover .alllist{display: block;}
+.nav .all a.alll{float: left;width: 175px;background: url(../img/bg-1.png) 158px -218px no-repeat #78a000;font: 400 18px/44px "Microsoft YaHei";color: #fff;padding-left: 35px;text-decoration: none;}
+.nav .all .allll{height:44px;}
+
+.nav .alllist{border: 2px solid #91be16;position: absolute;left: 0;height: 396px;width: 206px;background-color: #fff;display:none;z-index:39}
+.nav .alllist dl{height: 33px;width: 206px;float: left;}
+.nav .alllist dl dt{height: 31px;line-height: 31px;width: 156px;position:relative;z-index: 37;top: 0;left: 0;color: #4c4c4c;padding: 1px 0 1px 50px;text-overflow: clip;display: block;overflow: hidden;font-family: "Microsoft YaHei";background:url(../img/bg-5.png)  no-repeat #fff;}
+.nav .alllist dl dt:after{content: "";background: url(../img/youjian.png) 0 0 no-repeat;display: block;width: 6px;height: 12px;float: right;margin: 12px 12px 0 0;}
+.nav .alllist dl:nth-child(1) dt{background-position:8px -33px}
+.nav .alllist dl:nth-child(2) dt{background-position:8px 0}
+.nav .alllist dl:nth-child(3) dt{background-position:8px -66px}
+.nav .alllist dl:nth-child(4) dt{background-position:8px -99px}
+.nav .alllist dl:nth-child(5) dt{background-position:8px -132px}
+.nav .alllist dl:nth-child(6) dt{background-position:8px -165px}
+.nav .alllist dl:nth-child(7) dt{background-position:8px -198px}
+.nav .alllist dl:nth-child(8) dt{background-position:8px -231px}
+.nav .alllist dl:nth-child(9) dt{background-position:8px -264px}
+.nav .alllist dl:nth-child(10) dt{background-position:8px -297px}
+.nav .alllist dl:nth-child(11) dt{background-position:8px -330px}
+.nav .alllist dl:nth-child(12) dt{background-position:8px -363px}
+.nav .alllist dl dt:hover{background:url(../img/bg-6.png)  no-repeat #fff;border-top: 1px solid #91be16;border-bottom: 1px solid #91be16;border-left: 2px solid #91be16;padding: 0 3px 0 48px;color: #78a000;font-size: 14px;}
+.nav .alllist dl:hover dd{display: block;}
+.nav .alllist dl:nth-child(1) dt:hover{background-position:6px -33px}
+.nav .alllist dl:nth-child(2) dt:hover{background-position:6px 0}
+.nav .alllist dl:nth-child(3) dt:hover{background-position:6px -66px}
+.nav .alllist dl:nth-child(4) dt:hover{background-position:6px -99px}
+.nav .alllist dl:nth-child(5) dt:hover{background-position:6px -132px}
+.nav .alllist dl:nth-child(6) dt:hover{background-position:6px -165px}
+.nav .alllist dl:nth-child(7) dt:hover{background-position:6px -198px}
+.nav .alllist dl:nth-child(8) dt:hover{background-position:6px -231px}
+.nav .alllist dl:nth-child(9) dt:hover{background-position:6px -264px}
+.nav .alllist dl:nth-child(10) dt:hover{background-position:6px -297px}
+.nav .alllist dl:nth-child(11) dt:hover{background-position:6px -330px}
+.nav .alllist dl:nth-child(12) dt:hover{background-position:6px -363px}
+.nav .alllist dl dt a:hover{color: #8ab700;text-decoration: underline;}
+.nav .alllist dl dd{display: none; width:600px;border: 1px solid #8ab700;border-top:0; background: rgba(255,255,255,.97);position: absolute;top: -2px;left: 208px;z-index: 36;min-height: 384px;padding: 15px 15px 0 0;}
+.nav .alllist dl dd ul{width:590px;float:left;}
+.nav .alllist dl dd ul li{overflow:hidden;}
+.nav .alllist dl dd ul li .list-l{width: 90px;float: left;text-align: right;font-weight: 700;}
+.nav .alllist dl dd ul li .list-l a{color:#688529;}
+.nav .alllist dl dd ul li .list-l a:hover{color: #ff6900;text-decoration: underline;}
+.nav .alllist dl dd ul li .list-r{width: 495px;float: right;}
+.nav .alllist dl dd ul li .list-r em{padding: 0 15px;border-right: 1px solid #4c4c4c;float: left;max-width: 400px;margin: 0 0 17px;}
+.nav .alllist dl dd ul li .list-r em:last-child{border-right: 0;}
+.nav .alllist dl dd ul li .list-r em a{color: #4c4c4c;white-space: nowrap;width: auto;}
+.nav .alllist dl dd ul li .list-r em a:hover{color: #ff6900;text-decoration: underline;}
+
+.nav ul.meau{float: right;width: 988px;height: 40px;margin: 2px 0 0 2px;overflow:inherit;}
+.nav ul.meau li{float: left;position: relative;}
+.nav ul.meau li a{color: #fff;font: 400 18px/40px "Microsoft YaHei";padding: 0 25px;display: block;}
+.nav ul.meau li a:hover{background: #78a000;}
+.nav ul.meau li img{position: absolute;top: -8px;right: 8px;}
+
+.way{color: #959595;line-height: 40px;}
+.way a:hover{color: #ff6900;text-decoration: underline;}
+
+.goodsbox{width: 596px;float: left;}
+.goodspic{width: 596px;float: left;}
+.goodspic dl{width: 84px;float: left;}
+.goodspic dl dt a{width: 82px;height: 15px;float: left;text-align: center;border: 1px solid #c9c9c9;background: url(../img/bg-9.png) no-repeat;}
+.goodspic dl dt a.up{background-position: 33px 5px;}
+.goodspic dl dt a.down{background-position: 33px -21px;}
+.goodspic dl dd{width: 84px;float: left;margin-top: 8px;height: 460px;overflow: hidden;}
+.goodspic dl dd a{border: 1px solid #c9c9c9;display: block;margin-bottom: 8px;}
+.goodspic dl dd a img{width: 82px;height: 82px;border: 0;}
+.goodspic dl dd a.on{border: 1px solid #8ab800 !important;}
+.goodspic .sbox{float: right;width: 500px;height: 500px;border: 1px solid rgb(201, 201, 201);overflow: hidden;margin-top: 0px;}
+.goodspic .sbox .simg{width: 500px;height: 500px;overflow: hidden;}
+.goodsnum{float: left;width: 270px;line-height: 45px;color: #535353;}
+.goodscol{float: right;margin: 0 10px 0 15px;display: inline;}
+.goodscol a{background: url(../img/bg-10.gif) 0 -119px no-repeat;line-height: 45px;color: #535353;padding-left: 20px;display: block;}
+.goodsshare{float: right;width: 87px;margin-top: 6px;background-color: #fff;}
+.goodsshare a{line-height: 30px;background: url(../img/xiajian.png) 69px 12px no-repeat;height: 30px;display: block;}
+.goodsshare a s{background: url(../img/bg-10.gif) 0 -100px no-repeat;width: 16px;height: 16px;float: left;margin: 7px 5px 0 6px;display: block;}
+
+.goodsintro{float: right;width: 570px;}
+.goodsintro .introname{float: left;width: 570px;height: auto !important;min-height: 68px;border-bottom: 1px solid #e0e0e0;}
+.goodsintro .introname h1{font: 800 18px/34px "Microsoft YaHei";color: #4c4c4c;}
+.goodsintro .introname p{font-size: 14px;color: #ff6900;line-height: 26px;}
+.goodsintro .introsales{float: left;width: 570px;border-bottom: 1px solid #e0e0e0;padding: 18px 0;}
+.goodsintro .introsales .introprice{float: left;width: 570px;margin: 0 0 18px;}
+.goodsintro .introsales .introprice .drop{float: left; color: #fff;font-size: 14px;background-color: #ff6900;line-height: 26px; padding: 0 8px;margin-right: 10px;}
+.goodsintro .introsales .introprice .price{float: left;font: 800 26px/26px "Microsoft YaHei";color: #ff6900;}
+.goodsintro .introsales .introprice .price span{font: 800 16px/26px "Microsoft YaHei";color: #4c4c4c;margin-left: 10px;text-decoration: line-through;}
+.goodsintro .introsales .introprice .notice{margin: 3px 0 0 20px;float: left;}
+.goodsintro .introsales .introprice .notice a{background: url(../img/bg-10.gif) 10px -31px no-repeat;border: 1px solid #e7e7e7;line-height: 18px;color: #4c4c4c;padding: 0 10px 0 25px;display: block;}
+.goodsintro .introsales .introapp{float: left;}
+.goodsintro .introsales .introapp dl{float: left;width: 125px;height: 26px;position: relative;z-index: 10;}
+.goodsintro .introsales .introapp dl:hover dd{display: block;}
+.goodsintro .introsales .introapp dl dt a{float: left;width: 97px;height: 26px;background: url(../img/app.png) 0 0 no-repeat #ff6900;font-size: 14px;color: #fff;padding-left: 28px;line-height: 26px;text-decoration: none;}
+.goodsintro .introsales .introapp dl dd{position: absolute;z-index: 20;left: 0;top: 26px;width: 220px;background-color: #fff;border: 1px solid #ddd;text-align: center;padding-bottom: 10px;display: none;}
+.goodsintro .introsales .introapp dl dd p{background-color: #f4f4f4;line-height: 30px;}
+.goodsintro .introsales .introapp dl dd img{width: 220px;}
+.goodsintro .introsales .introapp dl dd em{font-size: 14px;font-weight: 700;}
+.goodsintro .goodsnorm{float: left;width: 570px;margin-top: 15px;}
+.goodsintro .goodsnorm dl{float: left;width: 570px;padding-bottom: 10px;}
+.goodsintro .goodsnorm dl dt{float: left;width: 65px;color: #4c4c4c;line-height: 30px;}
+.goodsintro .goodsnorm dl dd{float: right;width: 505px;color: #4c4c4c;line-height: 30px;}
+.goodsintro .goodsnorm dl dd ul{width: 530px;}
+.goodsintro .goodsnorm dl dd ul li{float: left;display: inline;padding: 1px;margin: 0 10px 10px 0;vertical-align: middle;}
+.goodsintro .goodsnorm dl dd ul li a{min-width: 10px;border: 1px solid #e5e5e5;display: inline-block;padding: 5px 15px;text-align: center;text-decoration: none;white-space: nowrap;line-height: 18px;color: #626252;}
+.goodsintro .goodsnorm dl dd ul li a.propon{border: 2px solid #90c000;padding: 4px 14px;background: url(../img/lvjian.gif) no-repeat 100% 14px;}
+.goodsintro .goodsbuy{float: left;width: 570px;margin-bottom: 20px;}
+.goodsintro .buybuy{float: left !important;display: inline;}
+.goodsintro .buybuy dl{float: left;width: 570px;height: 52px;}
+.goodsintro .buybuy dl dt{width: 75px;float: left;margin-right: 15px;}
+.goodsintro .buybuy dl dt input{border: 1px solid #cdcdcd;width: 54px;height: 48px;font: 400 24px/48px "Microsoft YaHei";color: #626262;text-align: center;float: left;}
+.goodsintro .buybuy dl dt a{float: left;width: 19px;height: 25px;display: block;}
+.goodsintro .buybuy dl dt a.up{background: url(../img/bg-9.png) 0 -52px no-repeat;}
+.goodsintro .buybuy dl dt a.down{background: url(../img/bg-9.png) -20px -52px no-repeat;}
+.goodsintro .buybuy dl dd{float: left;}
+.goodsintro .buybuy dl dd .buy{float: left;margin-right: 15px;}
+.goodsintro .buybuy dl dd .buy a{width: 182px;height: 52px;display: block;background: url(../img/bg-11.gif) no-repeat;}
+.goodsintro .buybuy dl dd .buy a.cart{background-position:0 0 ;}
+
+
+.bbox{z-index: 1000;position: absolute;top: 0;left: 0;width: 325px;height: 325px;top: 155px;background: #fff;border: 1px solid #CCC;display: none;text-align: center;overflow: hidden;}
+
+
+.fff{height: 25px;width: 100%;}
+
+footer{width: 100%;}
+footer .bar{width: 100%;height: 120px;background: #f8f8f6;}
+footer .bar dl{float: left;margin-right: 75px;padding-top: 40px;}
+footer .bar dl dt{background: url(../img/bg-4.gif) no-repeat;float: left;width: 28px;height: 40px;border-right: 1px solid #aeaead;padding: 0 13px;margin-right: 13px;}
+footer .bar dl dt.bar1{background-position: 14px 0;}
+footer .bar dl dt.bar2{background-position: 14px -50px;}
+footer .bar dl dt.bar3{background-position: 14px -100px;}
+footer .bar dl dt.bar4{background-position: 14px -150px;}
+footer .bar dl dd{font: 400 14px/22px "Microsoft YaHei";color: #666;float: left;}
+footer .bar dl dd span{display: block;font: 400 20px/22px "Microsoft YaHei";color: #90b42f;}
+footer .foott{width: 920px;padding: 20px 0 20px 70px;height: 160px;border-top: 0;margin: 0 auto;}
+footer .foott dl{float: left;width: 230px;height: 160px;}
+footer .foott dl dt{font: 700 14px/26px "微软雅黑";height: 26px;margin-bottom: 10px;color: #666;padding-left: 35px;background: url(../img/bg-4.gif) no-repeat;}
+footer .foott dl dt.xs{background-position: 0 -250px;}
+footer .foott dl dt.ps{background-position: 0 -280px;}
+footer .foott dl dt.zf{background-position: 0 -314px;}
+footer .foott dl dt.sh{background-position: 0 -348px;}
+footer .foott dl dd{line-height: 25px;margin-left: 10px;padding-left: 25px;border-left: 1px dotted #ccc;font-size: 12px;}
+footer .foott dl dd a:hover{color: #eb6100;text-decoration: underline;}
+footer .footb{text-align: center;}
+footer .footb dl{}
+footer .footb dl dt{font: 800 14px/30px "Microsoft YaHei";color: #666;}
+footer .footb dl dt img{margin: 0 4px 4px 0;width: 17px;height: 13px;}
+footer .footb dl dd{line-height: 24px;color: #666;overflow: hidden;text-align: center;}
+footer .footb dl dd.bo-1{margin: 10px 0;}
+footer .footb dl dd.bo-2{font-family: arial;}
+footer .footb dl dd em{padding: 0 10px;border-right: 1px solid #666;}
+footer .footb dl dd em:last-child{border:0}
+footer .footb dl dd.bo-1 em{border: 0;display: inline-block;height: 35px;width: 98px;}
+footer .footb dl dd.bo-1 em img{border: 0;display: inline-block;height: 35px;width: 98px;}
+footer .footb dl dd em a:hover{color: #eb6100;text-decoration: underline;}
+
+
+
+
