@@ -1,6 +1,6 @@
 class list{
 			constructor(){
-				this.cont = document.querySelector(".cont");
+				this.cont = document.querySelector("#content");
 	            this.url = "http://localhost/benlai-1/data/goods.json";
 	            
 	            
@@ -51,15 +51,32 @@ class list{
 			display(){
 				var str = "";
 					this.res.forEach((val)=>{
-	                str += `<div class="box" qwe="${val.goodsId}">
-	                            <img src="${val.url}" alt="">
-	                            <span>${val.name}</span>
-	                            <p>${val.price}</p>
-	                            <em>${val.tip}</em>
-	                            <i class="btn">加入购物车</i>
-	                        </div>`
+	                str += `<dl><dd><div class="box" qwe="${val.goodsId}">
+								<p class="pic"><a href="##"><img src="${val.url}" ></a></p>
+	                            <p class="name"><a href="##"><font>${val.name}</font><span>${val.tip}</span></a></p>
+	                            <p class="price">${val.price}<span>${val.fprice}</span></p>
+	                            <p class="cold">冷链配</p>
+	                            <p class="btn"><a href="##"></a></p>
+	                        </div></dl></dd>`
 	            })
 					this.cont.innerHTML = str;
 			}
-		}
+		} 
 		new list;
+		function ajaxGet(url,success,data){
+			data = data || {};
+			var str = '';
+			for(var i in data){
+				str = str + i + "=" + data[i] + "&";
+			}
+			var d = new Date();
+			url = url + "?" + str + "__qft="+d.getTime();
+			var ajax = new XMLHttpRequest();
+			ajax.open("get",url,true);
+			ajax.onreadystatechange = function(){
+				if(ajax.readyState == 4 && ajax.status == 200){
+					success(ajax.responseText)
+				}
+			}
+			ajax.send();
+		}

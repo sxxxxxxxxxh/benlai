@@ -1,3 +1,4 @@
+
 $(".banner").banner({
 		    items:$(".banner").find("img"),        //必传
 		    left:$(".banner").find("#left"),       //可选
@@ -7,3 +8,22 @@ $(".banner").banner({
 		    moveTime:1000,                          //可选，默认300
 		    index:0,                                //可选，默认0
 		})
+
+		
+	;(function(){
+		var msg = localStorage.getItem("loginUser");
+			if(msg){
+				$(".p1").hide();
+				$(".p2").show();
+				$(".p2").find("span").html(JSON.parse(msg).user);
+			}else{
+				$(".p1").show();
+				$(".p2").hide();
+			}
+
+			$("#out").click(function(){
+				localStorage.removeItem("loginUser");
+				$(".p1").show();
+				$(".p2").hide();
+			})		
+	})();

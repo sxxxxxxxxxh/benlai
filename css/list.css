@@ -103,7 +103,35 @@ nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height:
 .lmenu dl dd em a:hover{color: #8ab700;}
 .lmenu dl dd em a.on_s{color: #fff;background: #8ab700;}
 
+.goodsbox{width: 970px;float: right;}
+.goodsbox h1{width: 970px;float: left;margin-bottom: 10px;font: 400 20px/35px "微软雅黑";color: #333}
+.goodsbox .listli{width: 970px;float: left;background-color: #f8f8f6;margin-bottom: 10px;border-bottom: 1px solid #eee;height: 32px;}
+.goodsbox .listli ul{width: 460px;float: left;padding-left: 10px;}
+.goodsbox .listli ul li{padding: 0 25px;float: left;position: relative;}
+.goodsbox .listli ul li a{line-height: 33px;color: #626262}
+
+#content{width: 968px;float: left;border-top: 1px solid #eee;border-left: 1px solid #eee;margin-bottom: 30px;}
+#content dl{width: 242px;float: left;height: 395px;position: relative;z-index: 0;}
+#content dl dd{width: 241px;float: left;height: 394px;border-bottom: 1px solid #eee;border-right: 1px solid #eee;background-color: #fff;overflow: hidden;position: absolute;z-index: 4;top: 0;left: 0;}
+#content dl dd .box{border: 4px solid #fff;width: 211px;height: 386px;padding: 0 11px;position: relative;}
+#content dl dd .box:hover{border: 4px solid #f0f0f0;transition: all .2s linear;}
+#content dl dd .box .pic{margin-top: 10px;width: 211px;text-align: center;}
+#content dl dd .box .pic img{width: 201px;height: 201px;}
+#content dl dd .box .name{height: 72px;width: 211px;text-overflow: clip;display: block;overflow: hidden;margin-top: 5px;}
+#content dl dd .box .name a{font: 400 14px/24px "Microsoft YaHei";color: #1b1b15;}
+#content dl dd .box .name a:hover{color: #ff6900;}
+#content dl dd .box .name a font{max-height: 48px;text-overflow: clip;display: block;overflow: hidden;font-size: 14px;cursor: pointer;}
+#content dl dd .box .name a span{font: 400 12px/24px "Microsoft YaHei";color: #929292;text-overflow: clip;display: block;overflow: hidden;font-size: 14px;height: 24px;cursor: pointer;}
+#content dl dd .box .price{font: 400 20px/25px "Microsoft YaHei";color: #ff6900;margin-top: 5px;}
+#content dl dd .box .price span{font: 400 14px/25px "Microsoft YaHei";color: #686c69;text-decoration: line-through;margin-left: 10px;}
+#content dl dd .box .cold{float: left;border: 1px solid #ff6900;font: 400 12px/17px "Microsoft YaHei";color: #ff6900;padding: 0 5px;margin-top: 8px;}
+#content dl dd .box .btn{position: absolute;top: 390px;left: 0;transition: all .2s linear;z-index: 2;}
+#content dl dd .box .btn a{background: url(../img/bg-12.png) no-repeat;width: 233px;height: 32px;display: block;}
+#content dl dd .box:hover .btn{top:358px}
+
+
 .fff{height: 25px;width: 100%;}
+
 
 footer{width: 100%;}
 footer .bar{width: 100%;height: 120px;background: #f8f8f6;}
