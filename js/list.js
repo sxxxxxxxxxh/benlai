@@ -12,11 +12,28 @@ class list{
 				this.cont.addEventListener("click",function(eve){
 					if(eve.target.className == "btn"){
 						that.id = eve.target.parentNode.getAttribute("qwe");
-						console.log(that.id)
 						that.setCookie()
 					}
 				})
+				this.cont.addEventListener("click",function(eve){
+					if(eve.target.className == "detail"){	
+						that.id=eve.target.parentNode.parentNode.parentNode.getAttribute("qwe")
+	//					var msg=getCookie("goods")
+						that.res.some((resVal)=>{
+							that.str=""
+							if(that.id  == resVal.goodsId){
+								that.str=resVal.goodsId
+							}
+							return that.str
+						})
+						document.location.href ='detail.html?'+that.str;
+					}
+				})
 			}
+			
+		
+
+
 			setCookie(){
 				this.goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
 				if(this.goods.length == 0){
@@ -52,17 +69,19 @@ class list{
 				var str = "";
 					this.res.forEach((val)=>{
 	                str += `<dl><dd><div class="box" qwe="${val.goodsId}">
-								<p class="pic"><a href="##"><img src="${val.url}" ></a></p>
-	                            <p class="name"><a href="##"><font>${val.name}</font><span>${val.tip}</span></a></p>
-	                            <p class="price">${val.price}<span>${val.fprice}</span></p>
+								<p class="pic"><a href="##"><img src="${val.url}" class="detail"></a></p>
+	                            <p class="name"><a href="##"><font class="detail">${val.name}</font><span>${val.tip}</span></a></p>
+	                            <p class="price">￥${val.price}<span>￥${val.fprice}</span></p>
 	                            <p class="cold">冷链配</p>
-	                            <p class="btn"><a href="##"></a></p>
+	                            <p class="btn" ></p>
 	                        </div></dl></dd>`
 	            })
 					this.cont.innerHTML = str;
 			}
 		} 
 		new list;
+		
+		
 		function ajaxGet(url,success,data){
 			data = data || {};
 			var str = '';
@@ -79,4 +98,37 @@ class list{
 				}
 			}
 			ajax.send();
+		}
+		
+		function setCookie(key,value,options){
+		    options = options || {};
+		
+		    var date = "";
+		    if(options.expires){
+		        var d = new Date();
+		        d.setDate(d.getDate()+options.expires);
+		        date = ";expires="+d;
+		    }
+		    var path = options.path ? ";path="+options.path : "";
+		
+		    document.cookie = key + "="+ value + date + path;
+		}
+		
+		function removeCookie(key,options){
+		    options = options || {};
+		    
+		    options.expires = -1;
+		    
+		    setCookie(key,null,options)
+		}
+		
+		function getCookie(key){
+		    var str = document.cookie;
+		    var arr = str.split("; ");
+		    for(var i=0;i<arr.length;i++){
+		        if(arr[i].split("=")[0] == key){
+		            return arr[i].split("=")[1];
+		        }
+		    }
+		    return "";
 		}
