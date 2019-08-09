@@ -108,10 +108,12 @@ nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height:
 .topgoods{background-color: #f8f8f6;border: 1px solid #e5e5e5;border-right: 1px solid #c2d58f;float: left;width: 123px;height: 264px;position: relative;}
 .topgoods dl{height: 44px;text-align: center;display: flex;}
 .topgoods dl dt{position: relative;z-index: 5;top: 0;left: 0;text-align: center;box-sizing: border-box;}
-.topgoods dl dt:hover{top: -1px;left: -1px;}
+.topgoods dl dt.onn{top: -1px;left: -1px;}
+
 .topgoods dl dt a{font: 400 16px/44px "Microsoft YaHei";color: #626252;display: block;height: 44px;width: 123px;}
-.topgoods dl dt a:hover{ color: #78a000;background-color: #fff;border-top: 1px solid #c2d58f;border-bottom: 1px solid #c2d58f;border-left: 4px solid #91be16;width: 117px;padding-right: 4px;}
-.topgoods dl .ddd{border-top: 1px solid #c2d58f;position: absolute;top: -1px;left: 124px;z-index: 4;width: 885px;height: 265px;}
+.topgoods dl dt a.on{color: #78a000;background-color: #fff;border-top: 1px solid #c2d58f;border-bottom: 1px solid #c2d58f;border-left: 4px solid #91be16;width: 117px;padding-right: 4px;}
+.topgoods dl dt a:hover{ }
+.topgoods dl .ddd{display: none; border-top: 1px solid #c2d58f;position: absolute;top: -1px;left: 124px;z-index: 4;width: 885px;height: 265px;}
 
  .topgoods dl dd ul{display: flex;}
  .topgoods dl dd ul.goods li{border-bottom: 1px solid #c2d58f;width: 176px;height: 264px;border-right: 1px solid #eee;background-color: #fff;overflow: hidden;position: relative;}
@@ -174,9 +176,9 @@ nav .shopcar .hottip{background: url(../img/bg-1.png) 0 -194px no-repeat;height:
 .main .lable ul li a:hover{background:#78a000 ;color:#fff ;}
 .main .table dl{height: 27px;width: 124px;float: left;margin: 10px 0;border-right: 1px solid #e5e5e5;}
 .main .table dl dt{position: relative;z-index: 5;top: -10px;left: 0;text-align: center;}
-.main .table dl dt:hover{top: -10px;left: -1px;}
+.main .table dl dt.onon{top: -10px;left: -1px;}
 .main .table dl dt a{font: 400 14px/37px "Microsoft YaHei";color: #626252;display: block;padding: 5px 0;width: 125px;height: 37px;text-overflow: clip;display: block;overflow: hidden;}
-.main .table dl dt.on a{color: #769b06;padding: 0 0 6px;border-top: 5px solid #91be16;border-left: 1px solid #91b678;border-right: 1px solid #91b678;background-color: #fff;width: 124px;}
+.main .table dl dt.onon a{color: #769b06;padding: 0 0 6px;border-top: 5px solid #91be16;border-left: 1px solid #91b678;border-right: 1px solid #91b678;background-color: #fff;width: 124px;}
 .main .table dl dd{position: absolute;top: 48px;left: 0;z-index: 4;width: 1200px;height: 530px;display: none;}
 .main .table dl dd .bbox{height: 530px;width: 885px;margin-left: 315px;}
 .main .table dl dd ul{overflow: hidden;}

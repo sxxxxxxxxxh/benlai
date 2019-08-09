@@ -1,5 +1,5 @@
 	;(function(){
-
+		//banner
 		$(".banner").banner({
 					items:$(".banner").find("img"),        //必传
 					left:$(".banner").find("#left"),       //可选
@@ -9,7 +9,7 @@
 					moveTime:1000,                          //可选，默认300
 					index:0,                                //可选，默认0
 				})
-				
+		//登录		
 		;(function(){
 			var msg = localStorage.getItem("loginUser");
 				if(msg){
@@ -26,8 +26,18 @@
 					$(".p1").show();
 					$(".p2").hide();
 				})
+				
+				$("#cartcart").on("click",function(){
+					if(msg){
+						location.href = "cart.html";
+					}else{
+						if(confirm("请先登录")){
+							location.href = "login.html";
+						}
+					}
+				})
 		})();
-					
+		//梯子			
 		$(function(){
 			
 			$('#titi li').click(function(){
@@ -37,28 +47,30 @@
 			     scrollTop:t.offset().top
 			 })	
 			})
+			
+			
 		})
-		
-		(function(){
-			$(".topgoods").find("dl dt").bind("mouseenter",function(){
-				this.addClass("on")
+		//选项卡
+		$(function(){
+			$(".topgoods").find("dl dt").bind("click",function(){
+				$(this).parent().parent().find("dl dt").removeClass("onn");
+				$(this).parent().parent().find("dl dt").find("a").removeClass("on");
+				$(this).parent().parent().find("dl dt").next(".ddd").hide();
+				$(this).addClass("onn");
+				$(this).find("a").addClass("on");
+				$(this).next(".ddd").show();
 			})
 			
-			// var bigUl = document.getElementsByTagName('coul')
-			// var list = document.getElementsByTagName('coli')
-			// var divBox = document.getElementsByTagName('loul');
-			// var divList = document.getElementsByClassName('loli')
-			// for(let i = 0; i < list.length; i++) {
-			// 	list[i].index = i;
-			// 	list[i].onmouseenter = function() {
-			// 		for(let j = 0; j < list.length; j++) {
-			// 			list[j].className = '';
-			// 			divList[j].style.display = 'none';
-			// 			
-			// 		}
-			// 		divList[i].style.display = 'block';
-			// 	}
-			// }
+			$(".mai").find("dl dt").bind("click",function(){
+				$(this).parent().parent().find("dl dt").removeClass("onon");
+				// $(this).parent().parent().find("dl dt").find("a").removeClass("on");
+				$(this).parent().parent().find("dl dt").next("dd").hide();
+				$(this).addClass("onon");
+				// $(this).find("a").addClass("on");
+				$(this).next("dd").show();
+			})
 		})
+		
+		
 
 	})();

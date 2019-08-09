@@ -23,6 +23,8 @@ class Cart{
 			
             this.tbody.addEventListener("click",function(eve){
                 if(eve.target.className == "del"){
+					that.ccc.checked = false;
+					eve.target.parentNode.parentNode.firstElementChild.firstElementChild.checked=false
                     that.id = eve.target.parentNode.getAttribute("index");
                     eve.target.parentNode.remove();
                     that.changeCookie(function(i){
@@ -33,7 +35,10 @@ class Cart{
 			
             this.tbody.addEventListener("input",function(eve){
                 if(eve.target.className == "num"){
+					var p = eve.target.parentNode.parentNode.previousElementSibling.innerHTML.substr(1);
 					that.ccc.checked = false;
+					eve.target.parentNode.parentNode.parentNode.firstElementChild.firstElementChild.checked=false
+					eve.target.parentNode.parentNode.nextElementSibling.innerHTML="￥"+ (p * eve.target.value).toFixed(2)
                     that.id = eve.target.parentNode.parentNode.parentNode.getAttribute("index");
                     that.changeCookie(function(i){
                         that.goods[i].num = eve.target.value;
@@ -57,7 +62,6 @@ class Cart{
             var that = this;
             ajaxGet(this.url,function(res){
                 that.res = JSON.parse(res);
-				console.log(that.res)
                 that.getCookie()
             })
         }
@@ -74,7 +78,7 @@ class Cart{
                 this.goods.forEach((goodsVal)=>{
                     if(resVal.goodsId == goodsVal.id){
 						count += goodsVal.num;
-						sum += Math.round(goodsVal.num * resVal.price) 
+						sum += (goodsVal.num * resVal.price).toFixed(2) 
                         str += `<li index="${resVal.goodsId}">
                                     <div class="check">
                                     	<input type="checkbox"checked="checked" />
@@ -106,7 +110,23 @@ class Cart{
 
     new Cart;
 
-
+	;(function(){
+		var msg = localStorage.getItem("loginUser");
+			if(msg){
+				$(".p1").hide();
+				$(".p2").show();
+				$(".p2").find("span").html(JSON.parse(msg).user);
+			}else{
+				$(".p1").show();
+				$(".p2").hide();
+			}
+	
+			$("#out").click(function(){
+				localStorage.removeItem("loginUser");
+				$(".p1").show();
+				$(".p2").hide();
+			})
+	})();
 
 
 

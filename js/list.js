@@ -81,6 +81,33 @@ class list{
 		} 
 		new list;
 		
+		;(function(){
+			var msg = localStorage.getItem("loginUser");
+				if(msg){
+					$(".p1").hide();
+					$(".p2").show();
+					$(".p2").find("span").html(JSON.parse(msg).user);
+				}else{
+					$(".p1").show();
+					$(".p2").hide();
+				}
+		
+				$("#out").click(function(){
+					localStorage.removeItem("loginUser");
+					$(".p1").show();
+					$(".p2").hide();
+				})
+				
+				$("#cartcart").on("click",function(){
+					if(msg){
+						location.href = "cart.html";
+					}else{
+						if(confirm("请先登录")){
+							location.href = "login.html";
+						}
+					}
+				})
+		})();
 		
 		function ajaxGet(url,success,data){
 			data = data || {};
