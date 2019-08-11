@@ -78,7 +78,7 @@ class Cart{
                 this.goods.forEach((goodsVal)=>{
                     if(resVal.goodsId == goodsVal.id){
 						count += goodsVal.num;
-						sum += (goodsVal.num * resVal.price).toFixed(2) 
+						sum += goodsVal.num * resVal.price
                         str += `<li index="${resVal.goodsId}">
                                     <div class="check">
                                     	<input type="checkbox"checked="checked" />
@@ -103,8 +103,8 @@ class Cart{
                 })
             })
             this.tbody.innerHTML = str;
-			this.money.innerHTML = sum
-			this.allprice.innerHTML = `已选择${count}件商品，金额（包含运费）= <span>${sum+10}</span>`
+			this.money.innerHTML = sum.toFixed(2)
+			this.allprice.innerHTML = `已选择${count}件商品，金额（包含运费）= <span>${(sum+10).toFixed(2)}元</span>`
         }
     }
 
